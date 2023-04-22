@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			background-color: transparent;
+			color: #fffffff0;
+			text-align: center;
+			padding: 20px;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 40px;
+			color: teal;
+            font-size: 50px;
+		}
+		form {
+			background-color:transparent;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #605a5a;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 600px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #100f0f;
+		}
+		input[type="text"], input[type="number"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px #ccc;
+			box-sizing: border-box;
+			font-size: 16px;
+			font-family: inherit;
+		}
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+		label.radio-label {
+			margin-right: 30px;
+			font-weight: normal;
+			color: #666;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			font-family: inherit;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		.error-message {
+			color: #f00;
+			margin-top: 5px;
+			font-size: 14px;
+		}
+		.success-message {
+			color: #4CAF50;
+			margin-top: 5px;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="header">
+		<h1>  SURVEY FORM</h1>
+	</div>
+	<form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+		<label for="first-name">First Name:</label>
+	<div><input type="text" id="first-name" placeholder="Enter your name  " name="first_name" required>
+		<i class="far fa-user"></i></div>
+		<label for="last-name">Last Name:</label>
+		<input type="text" id="last-name" placeholder="enter your last name  " name="last_name" required>
+		<label for="street">Street:</label>
+		<input type="text" id="street" placeholder="enter street" name="street_address" required>
+		<label for="city">City:</label>
+		<input type="text" id="city"  placeholder="enter city" name="city" required>
+		<label for="state">State:</label>
+		<input type="text" id="state" placeholder="enter your state" name="state" required>
+		<label for="pincode">Pin code:</label>
+		<input type="number" id="pincode" placeholder="enter pincode" name="pincode" required>
+		<div>	<label for="contact-number">Contact Number:</label>
+		<input type="number" id="contact-number"placeholder="enter your no." name="contact_number" required>
+		<i class="far fa-telepnone"></i></div>
+		<label 
+		Quality of products received:</label>
+		<label for="quality-excellent"><input type="radio" id="quality-excellent" name="quality_of_products_received_ratingdelivery_rating"excellent" required>Excellent</label>
+		<label for="quality-good"><input type="radio" id="quality-good" name="quality_of_products_received_rating" value="good">Good</label>
+		<label for="quality-bad"><input type="radio" id="quality-bad" name="quality_of_products_received_rating" value="bad">Bad</label>
+		<label>Value for money:</label>
+		<label for="value-excellent"><input type="radio" id="value-excellent" name="value_for_money_ratingquality_of_products_received_rating="excellent" required>Excellent</label>
+		<label for="value-good"><input type="radio" id="value-good" name="value_for_money_ratingquality_of_products_received_rating="good">Good</label>
+		<label for="value-bad"><input type="radio" id="value-bad" name="value_for_money_ratingquality_of_products_received_rating="bad">Bad</label>
+		<label>Delivery:</label>
+		<label for="delivery-excellent"><input type="radio" id="delivery-excellent" name="delivery_rating" value="excellent" required>Excellent</label>
+		<label for="delivery-good"><input type="radio" id="delivery-good" name="delivery_rating" value="good">Good</label>
+		<label for="delivery-bad"><input type="radio" id="delivery-bad" name="delivery_rating" value="bad">Bad</label>
+		<button method="post" type="submit">Submit</button>
+	</form>
+</body>
+</html>
